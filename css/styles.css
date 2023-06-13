@@ -1,0 +1,14 @@
+body {
+	background-color: rgb(15, 24, 39);
+	color: #fff;
+	font-weight: 600;
+}
+
+.container {
+	max-width: 60rem;
+}
+
+table thead {
+	background-color: #122535;
+	color: #fff;
+}

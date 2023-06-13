@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ========== Bootstrap CDN Css ========== -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<!-- ========== Custom Style.css ========== -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Agenda</title>
+	</head>
+	<body>
+		<div class="container">
+			<main>
+				<!-- Header main -->
+				<div class="py-5 text-center">
+					<img
+						class="d-block mx-auto mb-4"
+						src="imagenes/logo.png"
+						alt="Agenda"
+						width="100"
+						height="100"
+					/>
+					<h2>Agenda</h2>
+					<p class="lead">Podras guardar y ver tus contactos.</p>
+				</div>
+				<!-- Header main -->
+
+				<!-- Section Form -->
+				<div class="row g-5">
+					<h4 class="mb-1">Guarda un nuevo contacto</h4>
+					<form class="needs-validation" novalidate>
+						<div class="row g-1">
+							<div class="col-sm-6">
+								<label for="firstName" class="form-label">Nombre del contacto</label>
+								<input
+									type="text"
+									class="form-control"
+									id="firstName"
+									placeholder=""
+									value=""
+									required
+								/>
+								<div class="invalid-feedback">Se requiere un nombre válido.</div>
+							</div>
+
+							<div class="col-sm-6">
+								<label for="lastName" class="form-label"
+									>Apellido del contacto</label
+								>
+								<input
+									type="text"
+									class="form-control"
+									id="lastName"
+									placeholder=""
+									value=""
+									required
+								/>
+								<div class="invalid-feedback">Se requiere apellido válido.</div>
+							</div>
+
+							<div class="col-12">
+								<label for="userphone" class="form-label">
+									Teléfono del contacto
+                                </label>
+								
+								<div class="input-group has-validation">
+									<span class="input-group-text">+1</span>
+									<input
+										type="text"
+										class="form-control"
+										id="userphone"
+										placeholder="Teléfono"
+										required
+									/>
+									<div class="invalid-feedback">
+										El número de teléfono es requerido
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr class="my-4" />
+
+						<button id="btn-data" class="w-100 btn btn-primary btn-lg" type="submit">
+							Guardar Contacto
+						</button>
+					</form>
+				</div>
+				<!-- Section Form -->
+				<hr class="my-4" />
+
+				<!-- Section Data -->
+				<div class="mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+					<div id="prueba"></div>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<th>Nombre</th>
+							<th>Apellido</th>
+							<th>Teléfono</th>
+						</thead>
+
+						<tbody id="infoUser"></tbody>
+					</table>
+				</div>
+				<!-- Section Data -->
+			</main>
+		</div>
+		<!-- ========== Custom Script,js =========-->
+		<script src="js/app.js"></script>
+		<!-- ========== Bootstrap CDN Js ========== -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
